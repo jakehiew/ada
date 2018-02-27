@@ -1,0 +1,69 @@
+* {
+	font-family: "Verdana"
+}
+/*
+* (Asterisk) is a Universal Selector
+*/
+
+
+h1, h2 {
+	color: rgb(123,20,233);
+}
+/*
+Multiple selectors can be used together
+Color can be done via 3 systems;
+	rgb or rgba (a refers to the transparency)
+	hex
+	hsl
+*/
+
+p {
+	font-size: 16px;
+	font-family: serif, sans-serif, monospace;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+	text-align: center;
+}
+/*
+Specific selectors will override Universal selectors
+font-size: 
+	Default font size is 16px, no space between value and px
+font-family: 
+	by listing more than 1 value, it will proceed to the next font if the earlier is not available;
+font-weight:
+	by default set to normal, other values include bold, lighter, etc
+font-style:
+	by default set to normal, other values include italic, oblique, initial, inherit
+text-decoration:
+	by default set to normal, other values include underline, overline, line-through, initial, inherit
+text-align:
+	by default set to left, other values include center (differs with middle on html), right, justify, initial, inherit
+
+*/
+
+table, td, th {
+	border: 1px solid green;
+	border-collapse: collapse;
+	border-style: solid;
+}
+
+th {
+	background-color: #7C8F46;
+	color: white;
+}
+/*
+to define tables, edit under the td selector
+border-style:
+	by default set to no border, other values include dotted, dashed, solid, double, groove, ridge, inset, outset, hidden, mixed;
+
+*/
+
+tr:nth-child(odd) {
+	color: brown;
+	background-color: beige;
+}
+/*
+nth-child:
+	formula (an+b), where a represents a cycle size, n is a counter (starts at 0), and b is an offset value;
+*/
